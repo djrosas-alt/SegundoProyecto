@@ -2,10 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Historial Tareas</title>
+    <link rel="stylesheet" href="CSS/principal.css">
 </head>
 <body>
+
+    <header>
+        <h1>Historial de Tareas</h1>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <input type="date" id="Fecha">
+            <input type="text" id="Descripcion" placeholder="Descripcion de la tarea">
+            <button id="agregar">Agregar</button>
+        </section>
+
+        <section class="filtros">
+            <input type="text" id="buscar" placeholder="Buscar Tarea"...>
+            <button id="limpiar Todo">Limpiar Todo</button>
+        </section>
+
+        <section class="contador">
+            <p>Completada: <span id="completadas"></span></p>
+            <br>
+            <p>Pendientes: <span id="pendientes"></span></p>
+        </section>
+
+        <section id="lista-tareas"></section>
+    </main>
     
+
+    <script src="JAVA/inicio.js"></script>
 </body>
 </html>
