@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Juego De Memoria</title>
+    <link rel="stylesheet" href="CSS/principal.css">
 </head>
 <body>
-    
+    <label for="num-cards">Cantidad de cartas</label>
+    <input type="number" id="num-cards" min="2" max="16" value="8">
+    <button id="start-btn">comenzar juego</button>
+
+    <div class="memory-game"></div>
+    <script src="JAVA/inicio.js"></script>
+
+
 </body>
 </html>
