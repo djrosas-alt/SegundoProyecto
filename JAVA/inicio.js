@@ -1,3 +1,27 @@
+let palabraFinal;
+let cont_errores = 0; 
+let cont_aciertos = 0; 
+
+const palabra_adivinar=
+['sueño',
+ 'queso',     
+ 'hamburguesa',     
+ 'programacion',    
+ 'murcielago',       
+ 'ahorcado',     
+ 'aprobado',       
+ 'naranja',   
+ 'piedra',
+ 'manzana'];
+
+
+const btn = id('generador');
+const imagen = id( 'imagenAhorcado' );
+const btn_abecedario = document.querySelectorAll( "#abecedario button" );
+
+
+btn.addEventListener('click', iniciar );
+
 function iniciar(event){
     imagen.src = 'IMAGENES/principal_0.png'
     btn.disabled = true;
